@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" class="[scrollbar-gutter:stable]">
+<html lang="cs" class="[scrollbar-gutter:stable]">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <.live_title default="PrahaStehuje" suffix=" · Phoenix Framework">
+    
+<!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Objednejte si stěhovací služby jednoduše jako pizzu. Rychlé, spolehlivé a cenově dostupné stěhování pro obyvatele Prahy."
+    />
+    <meta
+      name="keywords"
+      content="stěhování, stěhovací služby, Praha, levné stěhování, objednání stěhování, rezervační formulář"
+    />
+    <meta name="author" content="PrahaStehuje.cz" />
+    <meta property="og:title" content="PrahaStehuje.cz - Stěhovací služby v Praze" />
+    <meta
+      property="og:description"
+      content="Objednejte si stěhovací služby jednoduše jako pizzu. Rychlé a spolehlivé stěhování pro Prahu."
+    />
+    <meta property="og:url" content="https://prahastehuje.cz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://prahastehuje.cz/assets/og-image.jpg" />
+
+    <.live_title default="PrahaStehuje.cz" suffix=" · Stěhovací služby v Praze">
       {assigns[:page_title]}
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
